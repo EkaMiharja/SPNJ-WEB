@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <title>Grab Clone</title>
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="logo">
+        <img src="asset/logo.png" alt="Grab Logo">
+    </div>
+
+    <div class="container">
+        <div class="login-form">
+            <h2>Login/Daftar</h2>
+            <div class="input-with-icon">
+                <i class="fa-solid fa-user" style= "color: #eb8613;"></i>
+                <input type="text" placeholder="Username" class="input-icon" id="username" required>
+            </div>
+            <div class="input-with-icon">
+                <i class="fa-solid fa-lock" style= "color: #eb8613;"></i>
+                <input type="password" placeholder="Password" class="input-icon" id="password" required>
+            </div>
+            <button onclick="login()">Masuk</button>
+            <div class="social-buttons">
+                    <button class="google-btn"  onclick="window.location.href='https://food.grab.com'"><i class="fab fa-google"></i></button>
+                    <button class="facebook-btn" onclick="window.location.href='https://web.facebook.com/Grab/'"><i class="fab fa-facebook-f"></i></button>
+            </div>
+        </div>
+
+        <div class="location-form">
+            <h2>Selamat Siang</h2>
+            <p>Makanannya mau diantar kemana, kak?</p>
+            <div class="input-with-icon">
+                <i class="fa-solid fa-location-dot" style="color: #eb8613;"></i>
+                <input type="text" placeholder="Ketik Lokasi" class="input-icon" id="location" />
+            </div>
+            <button onclick="fetchLocation()">Cari</button>
+        </div>
+    </div>
+</div>
+
+<!-- JAVASCRIPT INDEX -->
+    <script src="script.js"></script>
+</body>
+</html>
